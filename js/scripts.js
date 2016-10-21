@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  $("form#survey").submit(function() {
-    event.preventDefault();
+  $("form#survey").submit(function(event) {
+    debugger;
     var question1 = $("input:radio[name=yes].checked").val();
     var question2 = $("input:radio[name=no]:checked").val();
-    
+
     console.log(yes)
     console.log(no)
 
@@ -19,5 +19,6 @@ $(document).ready(function() {
       $('#cssDesign').show();
     }
 
+event.preventDefault();
   });
 });
