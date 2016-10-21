@@ -26,3 +26,7 @@ p {
 .javaAndroid {
   display: none;
 }
+
+#output {
+  display: none;
+}

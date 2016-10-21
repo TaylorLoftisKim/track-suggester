@@ -21,6 +21,8 @@ $(document).ready(function() {
     var question5 = $("input:radio[name=no5]:checked").val();
     var question5 = $("input:radio[name=both5]:checked").val();
 
+    debugger;
+
     console.log(yes)
     console.log(no)
 
