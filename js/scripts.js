@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("form#questions").submit(function() {
+    event.preventDefault();
     var question1 = $("input:radio[name=yes1]:checked").val();
     var question1 = $("input:radio[name=no1]:checked").val();
     var question1 = $("input:radio[name=both1]:checked").val();
@@ -20,51 +21,47 @@ $(document).ready(function() {
     console.log(yes)
     console.log(no)
 
-    if (question1 === "yes1") {
-      $('#yes').show();
-    } else if (question1 === "no1") {
+    if (question1 === "yes1" || question1 != "no1" || question1 != "both1") {
+      $('#cssDesign').show();
+    } else if (question1 === "no1" || question1 != "yes1" || question1 != "both1") {
       $('#no').show();
-    } else if (question1 === "both1") {
+    } else if (question1 === "both1" || question1 != "yes1" || question1 != "no1") {
       $('#both').show();
     }
 
-
-    if (question2 === "ye2") {
-      $('#yes').show();
-    } else if (question2 === "no2") {
+    if (question2 === "yes2" || question2 != "no2" || question2 != "both2") {
+      $('#cssDesign').show();
+    } else if (question2 === "no2" || question2 != "yes2" || question2 != "both1") {
       $('#no').show();
-    } else if (question2 === "both2") {
+    } else if (question2 === "both2" || question2 != "yes2" || question2 != "no2") {
       $('#both').show();
     }
 
-    if (question3 === "yes3") {
-      $('#yes').show();
-    } else if (question3 === "no3") {
+    if (question3 === "yes3" || question3 != "no3" || question3 != "both3") {
+      $('#cssDesign').show();
+    } else if (question3 === "no3" || question3 != "yes3" || question3 != "both3") {
       $('#no').show();
-    } else if (question3 === "both3") {
+    } else if (question3 === "both3" || question3 != "yes3" || question3 != "no3") {
       $('#both').show();
     }
 
-    if (question4 === "yes4") {
-      $('#yes').show();
-    } else if (question4 === "no4") {
+    if (question4 === "yes4" || question4 != "no4" || question4 != "both4") {
+      $('#cssDesign').show();
+    } else if (question4 === "no4" || question4 != "yes4" || question4 != "both4") {
       $('#no').show();
-    } else if (question4 === "both4") {
+    } else if (question4 === "both4" || question4 != "yes4" || question4 != "no1") {
       $('#both').show();
     }
 
-    if (question5 === "yes5" ) {
-      $('#yes').show();
-    } else if (question5 === "no5") {
+    if (question5 === "yes5" || question5 != "no5" || question5 != "both5")
+      $('#cssDesign').show();
+    } else if (question5 === "no5" || question5 != "yes5" || question5 != "both5") {
       $('#no').show();
-    } else if (question5 === "both5") {
+    } else if (question5 === "both5" || question5 != "yes5" || question5 != "no5") {
       $('#both').show();
     }
 
     $("#output").text(result);
 
-
-
-    event.preventDefault();
   });
 });
