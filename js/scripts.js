@@ -25,43 +25,43 @@ $(document).ready(function() {
     console.log(no)
 
     if (question1 === "yes1" || question1 != "no1" || question1 != "both1") {
-      $('#cssDesign').show();
+      $('.cssDesign').show();
     } else if (question1 === "no1" || question1 != "yes1" || question1 != "both1") {
-      $('#cnet').show();
+      $('.cnet').show();
     } else if (question1 === "both1" || question1 != "yes1" || question1 != "no1") {
-      $('#javaAndroid').show();
+      $('.javaAndroid').show();
     }
 
     if (question2 === "yes2" || question2 != "no2" || question2 != "both2") {
-      $('#cssDesign').show();
+      $('.cssDesign').show();
     } else if (question2 === "no2" || question2 != "yes2" || question2 != "both1") {
-      $('#cnet').show();
+      $('.cnet').show();
     } else if (question2 === "both2" || question2 != "yes2" || question2 != "no2") {
-      $('#javaAndroid').show();
+      $('.javaAndroid').show();
     }
 
     if (question3 === "yes3" || question3 != "no3" || question3 != "both3") {
-      $('#cssDesign').show();
+      $('.cssDesign').show();
     } else if (question3 === "no3" || question3 != "yes3" || question3 != "both3") {
-      $('#cnet').show();
+      $('.cnet').show();
     } else if (question3 === "both3" || question3 != "yes3" || question3 != "no3") {
-      $('#javaAndroid').show();
+      $('.javaAndroid').show();
     }
 
     if (question4 === "yes4" || question4 != "no4" || question4 != "both4") {
-      $('#cssDesign').show();
+      $('.cssDesign').show();
     } else if (question4 === "no4" || question4 != "yes4" || question4 != "both4") {
-      $('#cnet').show();
-    } else if (question4 === "both4" || question4 != "yes4" || question4 != "no1") {
-      $('#javaAndroid').show();
+      $('.cnet').show();
+    } else if (question4 === "both4" || question4 != "yes4" || question4 != "no4") {
+      $('.javaAndroid').show();
     }
 
     if (question5 === "yes5" || question5 != "no5" || question5 != "both5")
-      $('#cssDesign').show();
+      $('.cssDesign').show();
     } else if (question5 === "no5" || question5 != "yes5" || question5 != "both5") {
-      $('#cnet').show();
+      $('.cnet').show();
     } else if (question5 === "both5" || question5 != "yes5" || question5 != "no5") {
-      $('#javaAndroid').show();
+      $('.javaAndroid').show();
     }
 
     $("#output").text(result);
