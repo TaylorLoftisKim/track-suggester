@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -10,17 +10,138 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Answer the setup of questions to determine your desired track.</h1>
-        <h2>
-
-        <form id="survey">
+        <h1>Epicodus Track Suggester</h1>
+        <p>*Answer the following questions to determine your track.</p>
+      <form id="survey">
+        <h2>Do you enjoy enjoy styling your webpages over writing the script for them? </h2>
         <div class="radio">
           <label>
-            <input type="radio" name="place"
-            value="Java"
+            <input type="radio" name="question1"
+            value="yes" checked>
+            <p>Yes.</p>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1"
+            value="c#.net">
+            <p>No.</p>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1"
+            value="both">
+            <p>I enjoy writing both.</p>
+        </div>
+        <h2>Do you enjoy working more on design, rather than the framework?</h2>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2"
+            value="yes" checked>
+            <p>Yes.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2"
+            value="cssDesign">
+            <p>No.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2"
+            value="cssDesign">
+            <p>I enjoy working on both.</p>
+        </div>
+
+        <h2>Are you more interested in Mobile Developtment vs. Web Development?</h2>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3"
+            value="yes" checked>
+            <p>Yes.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3"
+            value="c#.net">
+            <p>No.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3"
+            value="cssDesign">
+            <p>I enjoy working on both aspects of development equally.</em></p>
+        </div>
+
+        <h2>Would you rather work for a more user interactive website, rather than a more dynamic website?</h2>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4"
+            value="yes">
+            <p>Yes.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4"
+            value="javaAndroid">
+            <p>No.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4"
+            value="cssDesign">
+            <p>I wouldn't mind learning either one.</p>
+        </div>
+
+        <h2>Do you like the idea of styling for Mobile Developtment over Web Developtment</h2>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5"
+            value="yes" checked>
+            <p>Yes.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5"
+            value="javaAndroid">
+            <p>No.</p>
+        </div>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5"
+            value="cssDesign">
+            <p>I like the idea of styling on both web and mobile platforms.</p>
         </div>
 
 
+
+
+
+        <button type="submit" class="btn">What is my track?</button>
+
+
+        <div id="cssDesign">
+          <p>Your desired path is CSS and Design!</p>
+        </div>
+
+
+
+
+
+
+
+      </form>
 
 
       </div>
