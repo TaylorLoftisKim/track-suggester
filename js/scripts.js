@@ -1,25 +1,25 @@
 $(document).ready(function() {
   $("form#questions").submit(function() {
     event.preventDefault();
-    var question1 = $("input:radio[name=yes1]:checked").val();
-    var question1 = $("input:radio[name=no1]:checked").val();
-    var question1 = $("input:radio[name=both1]:checked").val();
+    var yes1 = $("input:radio[name=question1]:checked").val();
+    var no1 = $("input:radio[name=question1]:checked").val();
+    var both1 = $("input:radio[name=question1]:checked").val();
 
-    var question2 = $("input:radio[name=yes2]:checked").val();
-    var question2 = $("input:radio[name=no2]:checked").val();
-    var question2 = $("input:radio[name=both2]:checked").val();
+    var yes2 = $("input:radio[name=question2]:checked").val();
+    var no2 = $("input:radio[name=question2]:checked").val();
+    var both2 = $("input:radio[name=question2]:checked").val();
 
-    var question3 = $("input:radio[name=yes3]:checked").val();
-    var question3 = $("input:radio[name=no3]:checked").val();
-    var question3 = $("input:radio[name=both3]:checked").val();
+    var yes3 = $("input:radio[name=question3]:checked").val();
+    var no3 = $("input:radio[name=question3]:checked").val();
+    var both3 = $("input:radio[name=question3]:checked").val();
 
-    var question4 = $("input:radio[name=yes4]:checked").val();
-    var question4 = $("input:radio[name=no4]:checked").val();
-    var question4 = $("input:radio[name=both4]:checked").val();
+    var yes4 = $("input:radio[name=question4]:checked").val();
+    var no4 = $("input:radio[name=question4]:checked").val();
+    var both4 = $("input:radio[name=question4]:checked").val();
 
-    var question5 = $("input:radio[name=yes5]:checked").val();
-    var question5 = $("input:radio[name=no5]:checked").val();
-    var question5 = $("input:radio[name=both5]:checked").val();
+    var yes5 = $("input:radio[name=question5]:checked").val();
+    var no5 = $("input:radio[name=question5]:checked").val();
+    var both5 = $("input:radio[name=question5]:checked").val();
 
     debugger;
 
