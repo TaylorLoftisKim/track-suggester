@@ -27,6 +27,16 @@ p {
   display: none;
 }
 
-#output {
+.answer {
+  display: none;
+}
+
+p #output1 {
+  display: none;
+}
+p #output2 {
+  display: none;
+}
+p #output3 {
   display: none;
 }
